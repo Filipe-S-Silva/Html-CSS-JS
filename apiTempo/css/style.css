@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap&quot");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../img/beach.jpg');
+  background-size: cover;
+}
+
+.caixaMaior {
+  background: rgba(0, 0, 0, 0.801);
+  opacity: 0.9;
+  border-radius: 25px;
+  padding: 20px;
+  width: 95%;
+  max-width: 450px; 
+}
+
+.caixaMaior input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 18px;
+  background: #7c7c7c2b;
+  color: white;
+  width: calc(100% - 50px);
+}
+
+.btnBusca {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 50px;
+  background: #ebd6d62b;
+  cursor: pointer;
+  float: right;
+  transition: .5s;
+}
+
+.btnBusca:hover{
+    color: white;
+}
+
+.caixaMedia {
+  margin-top: 30px;
+}
+
+.cidade {
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.temp {
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+.textPreview{
+    text-transform: capitalize;
+    color: white;
+    margin: 10px 0;
+}
+
+.img-busca {
+  width: 20px;
+}
+
+.caixa-menor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+    gap: 20px;
+}
+
+.umidade{
+    color:white;
+    margin-top: 20px;
+}
+
+.caixaMaior .caixaMedia .image{
+  display: none;
+  height: 60px;
+  width: 60px;
+}

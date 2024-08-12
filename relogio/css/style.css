@@ -1,0 +1,97 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --cor: rgba(0, 0, 0, 0.329);
+    --shadow: rgba(0, 0, 0, 0.568);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+img {
+    width: 170px;
+    height: 170px;
+}
+
+.mensager {
+    background: var(--cor);
+    width: 250px;
+    height: 100px;
+    font-size: 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px var(--shadow);
+}
+
+.date {
+    background: var(--cor);
+    width: 250px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    gap: 5px;
+    box-shadow: 5px 5px 5px var(--shadow);
+}
+
+.clock {
+    background: var(--cor);
+    width: 500px;
+    height: 150px;
+    font-size: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid white;
+    gap: 20px;
+    box-shadow: 5px 5px 5px var(--shadow);
+}
+
+.clock div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.clock #time {
+    font-size: 17px;
+}
+
+.clock #doublePoint {
+    font-size: 30px;
+    
+}
+.morning {
+
+    background: linear-gradient(rgb(212, 212, 212), orange);
+    color: white;
+    
+}
+
+.afternoon {
+    background: linear-gradient(orange, red);
+    color: white;
+}
+
+.night {
+    background: linear-gradient(purple, rgb(73, 73, 73));
+    color: white;
+}

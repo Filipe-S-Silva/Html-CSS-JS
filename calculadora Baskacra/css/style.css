@@ -1,0 +1,115 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(270deg, rgb(231, 209, 156), rgba(247, 176, 45, 0.756), orange, rgba(248, 27, 27, 0.688), rgb(187, 1, 1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.site .title h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.site .title h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.site hr {
+    height: 5px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(214, 214, 214);
+    width: 100%;
+}
+
+.site .user {
+    background: rgba(0, 0, 0, 0.601);
+    border-radius: 10px;
+    width: 360px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.site .user h3 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.user input {
+    color: black;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.6s;
+}
+
+.user button {
+    border-radius: 20px;
+    cursor: pointer;
+    background: rgba(248, 27, 27, 0.688);
+    color: white;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    border: 9px solid transparent;
+    transition: 0.7s;
+}
+
+.user button:hover {
+    color: rgba(248, 27, 27, 0.688);
+    background: white;
+    border: 2px solid rgba(248, 27, 27, 0.688);
+    font-size: 27px;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+.site .result {
+    background: rgba(0, 0, 0, 0.601);
+    border-radius: 10px;
+    width: 360px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+}
+
+.site .result hr {
+    background: white;
+    margin-top: -20px;
+    width: 50%;
+    height: 3px;
+    border: none;
+}
+
+.site .user hr {
+    background: white;
+    margin-top: -35px;
+    width: 80%;
+    height: 3px;
+    border: none;
+}

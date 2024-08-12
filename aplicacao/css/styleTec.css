@@ -1,0 +1,302 @@
+:root {
+    --orangeForte: #9F2B06;
+    --orangeFraco: #EF6106;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(var(--orangeFraco), var(--orangeForte));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.navagation {
+    position: absolute;
+    border-right: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    left: -3%;
+    height: 100vh;
+    width: 180px;
+    padding: 60px;
+    transition: .4s;
+}
+
+.navagation button {
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 200px;
+    padding-left: 40%;
+    border-radius: 20px;
+    height: 100px;
+    transition: .4s;
+}
+
+.navagation img {
+    width: 70px;
+    height: 70px;
+}
+
+.navagation .off {
+    background: transparent;
+}
+
+.navagation .off:hover {
+    background: var(--orangeForte);
+}
+
+.navagation .on {
+    background: white;
+}
+
+.navagation .on:hover {
+    background: silver;
+}
+
+.navagation #imgCursos{
+    height: 73px;
+
+}
+
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-left: 10%;
+
+}
+
+
+
+#user{
+    display: none;
+}
+
+#user .title{
+
+    margin-top: 10%;
+    margin-bottom: 8%;
+    color: white;
+}
+
+#user .perfil{
+    padding: 10px 0px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 40px;
+    width: 650px;
+    height: 480px;
+}
+
+#user .perfil #photo{
+    width: 100px;
+    height: 100px;
+}
+
+#user .inputs{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 500px;
+    height: 30px;
+    padding-left: 10px;
+    background: #E35906;
+    color: white;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+#user .inputs:hover{
+    background: #a54204;
+}
+
+#user #btn{
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+#user #btn img{
+    width: 90px;
+}
+
+#user #btn:hover{
+    background: rgba(192, 192, 192, 0.466);
+}
+
+
+
+#status{
+    display: flex;
+}
+
+#status .title {
+    margin: 10%;
+    color: white;
+}
+
+#status .title #capacete {
+    position: absolute;
+    top: -2%;
+    right: 31%;
+    z-index: -1;
+
+}
+
+#status .caixaGrande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#status .caixaGrande .caixaMedia {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#status .caixaGrande .caixaMedia div img {
+    width: 450px;
+    height: 250px;
+    filter: drop-shadow(6px 2px 10px rgba(255, 255, 255, 0.158));
+}
+
+#status .caixaGrande img {
+    
+    width: 220px;
+    height: 220px;
+
+}
+
+@media screen and (max-width: 1920px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+
+    .navagation {
+        position: absolute;
+        left: -4%;
+        height: 100vh;
+        width: 120px;
+        padding: 60px;
+    }
+
+    .navagation button {
+        width: 190px;
+        padding-left: 50%;
+        border-radius: 25px;
+        height: 70px;
+    }
+
+    .navagation img {
+        width: 55px;
+        height: 55px;
+    }
+
+
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin-left: 10%;
+    }
+
+
+
+    #user .title {
+        margin-top: 8%;
+        margin-bottom: 5%;
+        font-size: 25px;
+    }
+
+    #user .perfil {
+        padding: 2% 0%;
+        border-radius: 35px;
+        width: 600px;
+        height: 430px;
+    }
+
+    #user .perfil #photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    #user .inputs {
+        gap: 5px;
+        width: 460px;
+        height: 27px;
+        padding-left: 13px;
+        border-radius: 9px;
+        font-size: 17px;
+    }
+
+    #user #btn img {
+        width: 60px;
+    }
+
+
+
+    #status .title {
+        width: 550px;
+        font-size: 17px;
+        margin: 8%;
+    }
+
+    #status .title #capacete {
+        top: -6%;
+        right: 20%;
+        z-index: -1;
+
+    }
+
+    #status .caixaGrande {
+        gap: 20px;
+    }
+
+    #status .caixaGrande .caixaMedia {
+        gap: 14px;
+    }
+
+    #status .caixaGrande .caixaMedia div img {
+        width: 370px;
+        height: 180px;
+    }
+
+    #status .caixaGrande img {
+
+        width: 180px;
+        height: 180px;
+
+    }
+
+}

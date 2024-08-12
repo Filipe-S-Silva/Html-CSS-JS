@@ -1,0 +1,10 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+body {
+    background: linear-gradient(125deg, rgb(40, 33, 171), white);
+    height: 100vh;
+
+}

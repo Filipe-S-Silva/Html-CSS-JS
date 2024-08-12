@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora BHASKARA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="site">
+
+        <div class="title">
+
+            <h1>CALCULADORA AUTOMÁTICA DE</h1>            
+            <h1>EQUAÇÃO DE SEGUNDO GRAU</h1>
+            
+            <h2>FÓRMULA DE BHASKARA:</h2>            
+            <h2>( -b± √ (b² - 4 ac) ) / (2a)</h2>
+            <h2>ax² + bx + c = 0</h2>
+            
+        </div>
+        
+        <hr>
+
+        <div class="user">
+
+            <h3>VALORES PARA CÁLCULO</h3>
+            <hr>
+            <input type="number" id="valorA" placeholder="Insira valor de A" onkeyup="valorA_()">
+            <input type="number" id="valorB" placeholder="Insira valor de B" onkeyup="valorB_()">
+            <input type="number" id="valorC" placeholder="Insira valor de C" onkeyup="valorC_()">
+            <button class="btn">ENVIAR</button>
+
+        </div>
+
+        <hr>
+
+        <div class="result">
+
+            <h3 class="title">RESULTADOS</h3>
+            <hr>
+            <b>
+                <p>Valor de delta:
+            </b><span id="delta"></span></p>
+            <b>
+                <p>Valor do X1:
+            </b><span id="X1"></span></p>
+            <b>
+                <p>Valor do X2:
+            </b><span id="X2"></span></p>
+            <b>
+                <p>Comentário:
+            </b><span id="comentario"></span></p>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

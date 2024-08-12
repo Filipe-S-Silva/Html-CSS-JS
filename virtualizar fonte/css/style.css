@@ -1,0 +1,61 @@
+@font-face{
+    font-family: clock;
+    src: url('alarm clock.ttf');
+}
+
+.video{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    z-index: -1; /*camada da pagina*/
+    position: fixed;
+    opacity: 0.5;
+    
+}
+
+body{
+    background: black;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxCenter{
+    background: rgba(255, 255, 255, 0.466);
+    height: 500px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 40px;
+    gap: 40px;
+}
+
+.boxCenter .hours, .boxCenter .minutes, .boxCenter .seconds{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.808);
+    border-radius: 30px;
+    box-shadow: 2px 2px 3px black;
+    color: white;
+    height: 400px;
+    width: 150px;
+}
+
+.boxCenter .clock {
+    font-family: clock;
+    font-size: 80px;
+}
+
+.boxCenter .time{
+    font-weight: bold;
+    font-size: 20px;
+}
+

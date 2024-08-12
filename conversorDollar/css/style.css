@@ -1,0 +1,122 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg ,green, yellow, red);
+}
+
+.boxCenter {
+
+    background: rgba(0, 0, 0, 0.475);
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+    
+}
+
+.boxCenter .backDollar{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.boxCenter .real {
+    font-size: 20px;
+    color: white;    
+}
+
+.boxCenter .real p{
+
+    font-size: 25px;
+    filter: drop-shadow(5px 2px 1px black);
+    font-weight: bold;
+
+}
+
+
+.boxCenter .real input{
+    
+    padding-left: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    /* border-bottom: 2px solid green; */
+    outline: none;
+    width: 250px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    background: green;
+    color: white;
+    transition: .4s;
+}
+
+
+.boxCenter .real input:focus {
+    background: greenyellow;
+    color: black;
+}
+
+.boxCenter .real input::placeholder{
+    color: #fff;
+}
+
+.boxCenter .real input:focus::placeholder{
+    color: #000;
+}
+
+
+
+.boxCenter button {
+    background: black;
+    border: 2px solid white;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    outline: none;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    transition: .4s;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.685);
+}
+
+.boxCenter h1 {
+    color: white;
+    font-weight: bold;
+    filter: drop-shadow(5px 2px 1px black);
+}
+
+.boxCenter button:hover {
+    background: rgb(82, 82, 82);
+    
+}
+
+.boxCenter .results {
+
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    background: green;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    
+    
+}
+
+
+
+.boxCenter .results p {
+    padding: 10px;
+}
+
